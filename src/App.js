@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { uploadFile } from "react-s3";
-
+window.Buffer = window.Buffer || require("buffer").Buffer;
 const S3_BUCKET = process.env.BUCKET_NAME;
 const REGION = process.env.AWS_REGION;
 const ACCESS_KEY = process.env.ACCESS_KEY;
