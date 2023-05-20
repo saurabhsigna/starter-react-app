@@ -30,6 +30,13 @@ const App = () => {
   return (
     <div>
       <div>React S3 File Upload</div>
+      {
+        <div>
+          <div>bucket name {S3_BUCKET}</div>
+          <div>region {REGION}</div>
+          <div>ACCess key {ACCESS_KEY}</div>
+        </div>
+      }
       <input type="file" onChange={handleFileInput} />
       <button onClick={() => handleUpload(selectedFile)}> Upload to S3</button>
     </div>
