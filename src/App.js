@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { uploadFile } from "react-s3";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 const S3_BUCKET = process.env.REACT_APP_BUCKET_NAME;
-const REGION = process.env.REACT_APP_AWS_REGION;
+const REGION = process.env.AWS_REGION;
 const ACCESS_KEY = process.env.REACT_APP_ACCESS_KEY;
 const SECRET_ACCESS_KEY = process.env.REACT_APP_SECRET_ACCESS_KEY;
 
