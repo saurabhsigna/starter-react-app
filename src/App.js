@@ -23,7 +23,7 @@ const App = () => {
 
   const handleUpload = async (file) => {
     uploadFile(file, config)
-      .then((data) => console.log(data))
+      .then((data) => console.log(data + "i"))
       .catch((err) => console.error(err));
   };
 
